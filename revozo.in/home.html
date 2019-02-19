@@ -1,0 +1,771 @@
+
+<!DOCTYPE html>
+ 
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Revozo</title>
+
+    <style>
+	@font-face
+{
+font-family: segoe ui;
+src: url('fonts/segoeuisl.ttf');
+}
+
+
+/* --- social --- */
+
+.social {
+	margin: 5px ;
+	position:absolute;
+	right:10px;
+	top:0px;
+	z-index:500000;
+	
+}
+.social ul{
+margin:0px;	
+}
+.social li {
+	display: inline-block;
+	margin: 5px 5px 5px 0;
+	width: 26px;
+	height: 26px;
+	border-radius: 3px;
+border:thin solid #fff;
+	-webkit-transition: background-color .5s ease;
+	-moz-transition: background-color .5s ease;
+	-o-transition: background-color .5s ease;
+	transition: background-color .5s ease;
+	-ms-transition: background-color .5s ease;
+}
+
+.icon-facebook,.icon-twitter,.icon-google,.icon-flickr,.icon-pinterest,.icon-vimeo,.icon-youtube,.icon-linkedin,.icon-instagram,.icon-skype,.icon-vkontakte,.icon-tumblr,.icon-rss,.icon-picasa,.icon-deviant,.icon-wordpress,.icon-dribble {
+	width: 26px;
+	height: 26px;
+}
+
+.icon-facebook {
+	background: url(images/social.png);
+}
+.facebook:hover {
+	background-color: #3c5a98;
+}
+
+.icon-twitter {
+	background: url(images/social.png) -26px 0;
+}
+.twitter:hover {
+	background-color: #00aced;
+}
+
+.icon-google {
+	background: url(images/social.png) -52px 0;
+}
+.google:hover {
+	background-color: #cf3616;
+}
+
+.icon-flickr {
+	background: url(images/social.png) -78px 0;
+}
+.flickr:hover {
+	background-color: #ff0084;
+}
+
+.icon-pinterest {
+	background: url(images/social.png) -104px 0;
+}
+.pinterest:hover {
+	background-color: #cc2127;
+}
+
+.icon-vimeo {
+	background: url(images/social.png) -130px 0;
+}
+.vimeo:hover {
+	background-color: #1ab7ea;
+}
+
+.icon-youtube {
+	background: url(images/social.png) -156px 0;
+}
+.youtube:hover {
+	background-color: #ff3333;
+}
+
+.icon-linkedin {
+	background: url(images/social.png) -182px 0;
+}
+.linkedin:hover {
+	background-color: #0092be;
+}
+
+.icon-instagram {
+	background: url(images/social.png) -208px 0;
+}
+.instagram:hover {
+	background-color: #205c81;
+}
+
+.icon-skype {
+	background: url(images/social.png) -234px 0;
+}
+.skype:hover {
+	background-color: #009fe3;
+}
+
+.icon-vkontakte {
+	background: url(images/social.png) -260px 0;
+}
+.vkontakte:hover {
+	background-color: #4e729b;
+}
+
+.icon-tumblr {
+	background: url(images/social.png) -286px 0;
+}
+.tumblr:hover {
+	background-color: #44546b;
+}
+
+.icon-rss {
+	background: url(images/social.png) -312px 0;
+}
+.rss:hover {
+	background-color: #ff7e00;
+}
+
+.icon-picasa {
+	background: url(images/social.png) -338px 0;
+}
+.picasa:hover {
+	background-color: #a5b0ba;
+}
+
+.icon-deviant {
+	background: url(images/social.png) -364px 0;
+}
+.deviant:hover {
+	background-color: #4f5e55;
+}
+
+.icon-wordpress {
+	background: url(images/social.png) -390px 0;
+}
+.wordpress:hover {
+	background-color: #21759b;
+}
+
+.icon-dribble {
+	background: url(images/social.png) -416px 0;
+}
+.dribble:hover {
+	background-color: #ea4c89;
+}
+
+
+
+	#updates{
+		width:60%;
+		margin:0 auto;
+border-bottom:dashed #fff;
+	border-left:dashed #fff;
+border-right:dashed #fff;
+
+
+		opacity:0.8;
+		height:30px;
+		z-index:1000;
+	top:0px;
+	font-family: segoe ui;
+	font-size:14px;
+	padding:8px;
+height:17px;
+	color:#fff;
+	overflow:hidden;
+
+		
+	}
+	#updates .update{
+		
+		
+		position:absolute;
+padding-left:70px;
+		
+		
+	}
+	#updates .title{
+		float:left;
+		
+		position:absolute;
+	
+		
+	}
+	#updates p{	
+	white-space:nowrap;
+    overflow-x:hidden;
+	position:relative;
+   margin:0px;
+   width:730px;
+    -webkit-animation: typing 10s steps(200, end) infinite;
+    -webkit-animation-delay:3s;
+
+	}
+@-webkit-keyframes typing {
+    from { width: 0; }
+    to { width:730px; }
+}
+.twitter-bird {
+    background-image: url(twitter-bird-sprite.png);
+cursor: pointer;
+display: inline-block;
+height: 80px;
+width: 80px;
+opacity:1;
+left:1000px;
+top:270px;
+z-index:300;
+   position:absolute;
+	-webkit-animation: fly 0.5s steps(3)  0 infinite;
+-moz-animation: fly 0.5s steps(3) 0 infinite;
+animation: fly 0.5s steps(3) 0 infinite;
+
+}
+
+@-webkit-keyframes fly {
+    from { background-position: 0 0; }
+    to { background-position: -240px 0; }
+}
+@-moz-keyframes fly {
+    from { background-position: 0 0; }
+    to { background-position: -240px 0; }
+}
+.twitter-bird:hover {
+animation:none;
+-webkit-animation:none;-moz-animation:none}
+.andro {
+    background: url(gocal10.jpg);
+	background-size:100px 100px;
+cursor: pointer;
+display: inline-block;
+height: 100px;
+width: 100px;
+top:200px;
+position:absolute;
+}
+body {
+background:#009DEC;
+margin:0px;
+}
+.drop {
+  position: absolute;
+  left: 0px;
+  top: -10px;
+  width: 15px;
+  height: 15px;
+  
+/*  border-radius: 0px 5px 5px 5px;
+  transform: rotate(40deg)*/;
+  color:#409FDB;;
+}
+.state {
+  font-size: 10px;
+  font-family: tahoma;
+  color: #333;
+  display:none;
+}
+#cloud{
+	position:absolute;
+	
+	top:40px;
+	height:200px;
+		width:100%;
+	background:url(images/bg-clouds.png);
+	background-size:800px 200px;
+background-repeat:repeat-x;
+}
+.container{
+  background-color: #00000e;	
+	height:100%;
+	width:100%;
+	position:absolute;
+	top:0px;
+	left:0px;
+	z-index:0;
+}
+#logoa{
+	position:absolute;
+	width:100%;
+	top:70px;
+	right:50px;
+	background:transparent url('images/logoa.png') center;
+	background-size:120px 120px;
+ 	z-index:30000;
+height:120px;
+width:120px;
+opacity:1;
+	
+}
+#logok{
+	position:absolute;
+	width:100%;
+	top:70px;
+	left:30px;
+	background:transparent url('images/kct.png') center;
+	background-size:120px 120px;
+ 	z-index:30000;
+height:120px;
+width:120px;
+opacity:1;
+	
+}
+
+#it{
+padding:10px;
+top:10px;
+	margin:0 auto;
+	color:#fff;
+	width:400px;
+	font-size:18px;
+	font-family:segoe ui;
+	text-align:center;
+	opacity:1;
+}
+#date{
+padding:10px;
+top:0px;
+left:20px;
+	position:absolute;
+	color:#fff;
+	width:350px;
+	font-size:18px;
+	font-family:segoe ui;
+	
+	opacity:1;
+}
+
+#logo{
+	position:absolute;
+	width:100%;
+	top:0px;
+	right:0px;
+	background:transparent url('images/logo4.png') center;
+	background-size:150px 168px;
+ 	z-index:30000;
+height:168px;
+width:150px;
+opacity:0;
+	
+}
+#logo span{position: absolute;
+top:0px;
+left:0px;
+	opacity:0;
+	background:transparent url('images/logo2.png') center;
+	background-size:150px 168px;
+	height:168px;
+width:150px;
+	transition:opacity 0.5s ;
+-webkit-transition:opacity 0.5s ;
+	}
+	#logo:hover span{
+		opacity:1;
+	}
+#sun{
+	opacity:0;
+z-index:0;	
+left:300px;
+top:70px;
+position:absolute;
+	height:80px;
+	width:80px;
+}
+#ground{
+    position:absolute;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    width:100%;
+    height:232px;
+    background:transparent url('images/ground.png') repeat-x bottom center;
+    z-index:30000;
+	opacity:1;
+}
+#rev{
+	position:absolute;
+	width:100%;
+	top:0px;
+	left:0px;
+	background:transparent url('images/welcome.png') center;
+	background-size:442px 115px;
+ 	z-index:30000;
+height:115px;
+width:442px;
+	
+}
+#event{
+	position:absolute;
+
+	bottom:10px;
+	
+	background:transparent url('images/event3.png') ;
+	background-size:111px 247px;
+ 	z-index:30000;
+height:200px;
+width:111px;
+opacity:1;
+transition:bottom 0.5s;
+-webkit-transition:bottom 0.5s;
+	
+}
+#event:hover
+{
+bottom:20px;
+}
+
+#workshop:hover
+{
+bottom:40px;
+}
+
+#register:hover
+{
+bottom:50px;
+}
+
+#sponsors:hover
+{
+bottom:40px;
+}
+
+#gallery:hover
+{
+bottom:30px;
+}
+
+#about:hover
+{
+bottom:40px;
+}
+
+#contact:hover
+{
+bottom:20px;
+}
+#grass{
+		position:absolute;
+	bottom:10px;
+	
+	background:transparent url('images/grass.png') ;
+	background-size:85px 38px;
+ 	z-index:30000;
+height:38px;
+width:85px;
+opacity:1;
+	
+}
+#grassa{
+		position:absolute;
+	bottom:30px;
+	
+	background:transparent url('images/grass.png') ;
+	background-size:85px 38px;
+ 	z-index:30000;
+height:38px;
+width:85px;
+opacity:1;
+	
+}
+#grasss{
+		position:absolute;
+	bottom:40px;
+	
+	background:transparent url('images/grass.png') ;
+	background-size:85px 38px;
+ 	z-index:30000;
+height:38px;
+width:85px;
+opacity:1;
+	
+}
+
+#grassw{
+		position:absolute;
+	bottom:30px;
+	
+	background:transparent url('images/grass.png') ;
+	background-size:85px 38px;
+ 	z-index:30000;
+height:38px;
+width:85px;
+opacity:1;
+	
+}
+
+#grassr{
+		position:absolute;
+	bottom:20px;
+	
+	background:transparent url('images/grass.png') ;
+	background-size:85px 38px;
+ 	z-index:30000;
+height:38px;
+width:85px;
+opacity:1;
+	
+}
+#grassg{
+		position:absolute;
+	bottom:30px;
+	
+	background:transparent url('images/grass.png') ;
+	background-size:85px 38px;
+ 	z-index:30000;
+height:38px;
+width:85px;
+opacity:1;
+	
+}
+
+#grassc{
+		position:absolute;
+	bottom:10px;
+	
+	background:transparent url('images/grass.png') ;
+	background-size:85px 38px;
+ 	z-index:30000;
+height:38px;
+width:85px;
+opacity:1;
+	
+}
+
+#workshop{
+	position:absolute;
+	bottom:30px;
+	
+	background:transparent url('images/workshop.png') ;
+	background-size:126px 247px;
+ 	z-index:30000;
+height:170px;
+width:126px;
+opacity:1;
+transition:bottom 0.5s;
+-webkit-transition:bottom 0.5s;
+	
+}
+#register{
+	position:absolute;
+	bottom:40px;
+	
+	background:transparent url('images/register.png') ;
+	background-size:111px 247px;
+ 	z-index:30000;
+height:200px;
+width:111px;
+opacity:1;
+transition:bottom 0.5s;
+-webkit-transition:bottom 0.5s;
+	
+}
+#sponsors{
+	position:absolute;
+	bottom:30px;
+	
+	background:transparent url('images/sponsors.png') ;
+	background-size:111px 247px;
+ 	z-index:30000;
+height:180px;
+width:111px;
+opacity:1;
+transition:bottom 0.5s;
+-webkit-transition:bottom 0.5s;
+}
+#gallery{
+	position:absolute;
+	bottom:20px;
+	
+	background:transparent url('images/gallery.png') ;
+	background-size:111px 247px;
+ 	z-index:30000;
+height:210px;
+width:111px;
+opacity:1;
+transition:bottom 0.5s;
+-webkit-transition:bottom 0.5s;
+	
+}
+#about{
+	position:absolute;
+	bottom:30px;
+	
+	background:transparent url('images/about.png') ;
+	background-size:111px 247px;
+ 	z-index:30000;
+height:170px;
+width:111px;
+opacity:1;
+transition:bottom 0.5s;
+-webkit-transition:bottom 0.5s;
+	
+}
+#contact{
+	position:absolute;
+	bottom:10px;
+	
+	background:transparent url('images/contact.png') ;
+	background-size:111px 247px;
+ 	z-index:30000;
+height:200px;
+width:111px;
+opacity:1;
+transition:bottom 0.5s;
+-webkit-transition:bottom 0.5s;
+	
+}
+#tweet{
+	position:absolute;
+	opacity:0;
+	background:transparent url('images/follow.png') ;
+	background-size:75px 54px;
+	height:54px;
+width:75px;
+}
+#fb{
+	position:absolute;
+	opacity:1;
+	background:transparent url('images/fb.png') center no-repeat;
+	background-size:140px 106px;
+
+	left:250px;
+	top:270px;
+	height:106px;
+width:140px;
+
+
+}
+#fb span{position: absolute;
+top:0px;
+left:0px;
+	opacity:0;
+	background:transparent url('images/fb2.png') center no-repeat ;
+		background-size:140px 106px;
+	height:106px;
+width:140px;
+	transition:opacity 0.5s ;
+-webkit-transition:opacity 0.5s ;
+	}
+	#fb:hover span{
+		opacity:1;
+	}
+	#loade{
+	opacity:0;	
+	}
+	
+	.fb-like{
+	top:0px;
+left:0px;
+	z-index:9000000;
+	position:absolute;
+
+	}
+	#cloud3{
+	position: absolute;
+top:20px;
+
+	opacity:1;
+	height:200px;
+	width:100%;
+	background:url('images/bg-animation-clouds.png');
+	background-size:800px 200px;
+background-repeat:repeat-x;
+}
+</style> 
+
+
+
+
+ <script src="js/jquery-1.6.3.min.js" type="text/javascript"></script>
+    <script src="js/jquery.spritely-0.6.js" type="text/javascript"></script>
+
+                        <script src="js/home.js"></script>
+      
+
+</head>
+<body><script src="js/FullPageAnimations.js"></script> <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+<div id="loade"><div id="date">Jan 23<sup>rd</sup> & 24<sup>th</sup> 2014</div>
+<div id="updates"><div class="title"><b>Updates : </b></div><div class="update"><p class="1u">The LOGO!! will be launched on December 25th!!!! </p>
+<!--<p class="2u">Tired of watching star wars at home? Well, don’t be! Get to your sabers and march in to “STREET WARZ” and unleash the gamer inside you.</p><p class="3u"> A series of LAN games that are bound to take you to the next dimension! </p>--></div></div>
+ <div id="it"><div style="font-size:22px">Kumaraguru College of Technology</div>Department of Information Technology<br>Presents</div>
+
+
+
+<div class="fb-like" data-href="https://www.facebook.com/revozo14" data-width="100" data-layout="box_count" data-action="like" data-show-faces="true" data-share="true"></div>
+<div id="ground"></div>
+<div id="rev"></div>
+<a href="events.html"><div id="event"></div></a>
+
+<a href="workshop.html"><div id="workshop"></div></a>
+<a href="register.html"><div id="register"></div></a>
+<a href="sponsors.html"><div id="sponsors"></div></a>
+<a href="gallery.html"><div id="gallery"></div></a>
+<a href="about.html"><div id="about"></div></a>
+<a href="contact.html"><div id="contact"></div></a>
+<div id="tweet"></div>
+
+<div id="grass"></div>
+<div id="grassa"></div>
+<div id="grasss"></div>
+<div id="grassw"></div>
+<div id="grassr"></div>
+<div id="grassg"></div>
+<div id="grassc"></div>
+ <div id="logo"><span></span></div>
+
+ <div id="logoa"></div>
+ <div id="logok"></div>
+ <a href="https://twitter.com/revozo14" target="new"><div class='twitter-bird'></div></a>
+<img src="images/sun.png" id='sun' >
+<div id="cloud">
+</div>
+<div id="cloud3">
+</div>
+
+ 
+   <div class="social"><!-- Social icons -->
+                    <ul>
+                        <li class="facebook">
+                            <a href="https://www.facebook.com/revozo14" target="new"><div class="icon-facebook"></div></a>
+                        </li>
+                        <li class="twitter">
+                            <a href="https://twitter.com/revozo14" target="new"><div class="icon-twitter"></div></a>
+                        </li>
+                        <li class="google">
+             <a href="https://plus.google.com/109780994808730972707" target="new"><div class="icon-google"></div></a>
+                        </li>
+                        <li class="youtube">
+      <a href="http://www.youtube.com/channel/UCBGRZ5Dp_lbsbACAlfxo5CA/feed" target="new"><div class="icon-youtube"></div></a>
+                       
+                        <li class="rss">
+                            <a href="http://www.revozo.wordpress.com" target="new"><div class="icon-rss"></div></a>
+                        </li>
+                    </ul>
+                </div><!-- /Social icons -->
+
+  </div>
+ 
+
+</body>
+</html>

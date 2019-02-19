@@ -1,0 +1,150 @@
+/* Parent container for the entire gallery */
+.dg-image-gallery{
+	position:relative;
+	width:100%;
+	height:600px;
+
+	margin:0 auto;
+	overflow:hidden;
+}
+
+/* Enlarged image */
+
+.dg-image-gallery-enlarged-image {
+	position : absolute;
+	left: 0px;
+	top:0px;
+	background-position :center;
+	background-size:auto 100%;
+	width :100%;
+	z-index:0;
+	height: 600px;
+
+
+margin:0 auto;
+
+
+}
+
+/* Caption below large image */
+
+.dg-image-gallery-caption {
+	position:absolute;
+	bottom:150px;
+	height:30px;
+	width:100%;
+	text-align:center;
+	color: #CCC;
+}
+
+
+
+
+
+
+/* Container for all thumbnails */
+
+.dg-image-gallery-thumbnail-container {
+	position : absolute;
+	top : 150px;
+z-index:50;
+	left: 20px;
+	
+	width:130px;
+	height:100%;
+	/* height:???; - is set by the script based on property thumb height */
+}
+
+/* Thumbnails inside thumbnail strip */
+
+.dg-image-gallery-thumbnail{
+	width: 120px;
+	height : 120px;
+	padding-right:2px;
+	padding-left:2px;
+}
+
+
+/* Highlight element */
+.dg-image-gallery-thumbnail-highlight{
+	//border:3px solid #CCC;
+	padding:2px;
+}
+
+
+/* Previous and next buttons */
+
+
+.dg-image-gallery-previous, .dg-image-gallery-next {
+	background-position : center center;
+	cursor: pointer;
+	width:20px;
+	height:120px;
+	top:150px;
+	position: absolute;
+	cursor: pointer;z-index:20000;
+}
+
+.dg-image-gallery-previous{
+	background-image:url('../images/left.png');
+	left : 0px;
+}
+
+.dg-image-gallery-previous-over{
+	background-image:url('../images/left-over.png');
+}
+
+.dg-image-gallery-next{
+	background-image:url('../images/right.png');
+	left : 150px;
+}
+
+.dg-image-gallery-next-over{
+	background-image:url('../images/right-over.png');
+}
+
+
+/** Autoplay buttons */
+
+.dg-image-gallery-next-autoplay-container{
+	position:absolute;
+	left:50px;
+	top:100px;
+	z-index:20000;
+	width:60px;
+}
+
+.dg-image-gallery-next-autoplay-start, .dg-image-gallery-next-autoplay-stop{
+	position:absolute;
+	top:0px;
+	color:#CCC;
+	padding:5px;
+	height:20px;
+	width:30px;
+z-index:20000;
+	text-align:right;
+	background-repeat:no-repeat;
+	cursor:pointer;
+}
+
+.dg-image-gallery-next-autoplay-start{
+	left:0px;
+	background-image:url('../images/play.png');
+}
+
+.dg-image-gallery-next-autoplay-stop{
+	left:30px;
+	background-image:url('../images/pause.png');
+}
+
+.dg-image-gallery-next-autoplay-start-off{
+	background-image:url('../images/play-off.png');
+	cursor: default;
+
+}
+
+.dg-image-gallery-next-autoplay-stop-off{
+	background-image:url('../images/pause-off.png');
+	cursor: default;
+
+}
