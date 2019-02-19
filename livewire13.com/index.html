@@ -1,0 +1,902 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<title>Livewire'13</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="author" content="Livewire'13" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+	  	    
+		<script type="text/javascript" src="js/jquery.min1.js"></script>
+        
+        
+          <script type="text/javascript">
+	function AjaxFunction(email)
+	{
+		var httpxml;
+		try
+		  {
+		  // Firefox, Opera 8.0+, Safari
+		  httpxml=new XMLHttpRequest();
+		  }
+		catch (e)
+		  {
+		  // Internet Explorer
+		try
+				{
+		httpxml=new ActiveXObject("Msxml2.XMLHTTP");
+				}
+		catch (e)
+			{
+		try
+				{
+			httpxml=new ActiveXObject("Microsoft.XMLHTTP");
+				 }
+				catch (e)
+			{
+		alert("Your browser does not support AJAX!");
+		return false;
+				}
+				}
+		}
+		function stateck() 
+		 {
+		  	 if(httpxml.readyState==4)
+		  	 {
+				document.getElementById("msg").innerHTML=httpxml.responseText;
+			 }
+		   }
+		var url="email-ajax.php";
+		url=url+"?email="+email;
+		url=url+"&sid="+Math.random();
+		httpxml.onreadystatechange=stateck;
+		httpxml.open("GET",url,true);
+		httpxml.send(null);
+  }
+</script>
+
+         <link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/style3.css" />
+      <!--  <link href='http://fonts.googleapis.com/css?family=Electrolize' rel='stylesheet' type='text/css' />
+      -->
+		<link href="css/css2.css" rel='stylesheet' type='text/css' />
+		
+	</head>
+	<body  style="	 background: url(images/bgg1.jpg) no-repeat center center fixed #000; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  ">
+      
+
+        	<link type="text/css" rel="stylesheet" href="css/stylebu.css" media="all" />
+            	
+	<!--	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	-->	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+        <div id="switch"></div>
+		<div id="light-bulb" class="off"><div id="light-bulb2"></div></div>
+		<div id="logo"></div>
+		<div id="logosh"></div>
+		<div id="infobox"><p>Please activate JavaScript!</p></div>
+		<div id="home" class="content" >
+        <h2>Home</h2>
+   <p>   An event of great expectations and frolic every year.Yes,this is LIVEWIRE and it`s back this year. Popular for its fun-filled technical events, this year it has extended its realm and become a techno-management event making it even more interesting.``Knowledge is like a garden; if it`s not cultivated, it can`t be harvested`` says an African proverb and "All work and no play makes
+the jack dull". So here bringing out to you a
+flabbergasting balance of both knowledge and fun,promising it to be an
+eventful experience in our pursuit for a better future.</p>
+      <p>           This year the symposium aims at bringing the bright young minds into the limelight. The scintillating prizes along with the fun-filled events would help exercise young minds and bring out the hidden talents. The variety of events covers the entire gamut of the scope of EEE besides bringing out the hidden talents of the participants in various fields. You hungry for more of this? Come and savor each and every minute of this gala. 
+</p>
+		
+		</div>
+		<!-- /Home -->
+		
+			<!-- Events -->
+		<div id="events" class="panel" style="background-image:url(images/bgg.jpg)">
+	
+    
+     
+          <link rel="stylesheet" type="text/css" href="css/stylel.css" />
+		<link href="css/css.css" rel='stylesheet' type='text/css' />
+		<link href="css/css1.css" rel='stylesheet' type='text/css' />
+		<link type="text/css" href="css/jquery.jscrollpane.css" rel="stylesheet" media="all" />
+      
+     
+    
+    
+		<div id="mb_pattern" class="mb_pattern"></div>
+		  <div id="mb_menu" class="mb_menu" >
+    
+		
+			
+            
+        	<a href="#" data-speed="1000" data-easing="easeOutBack" >TECHSCRIBE</a>
+			<a href="#" data-speed="1000" data-easing="easeInExpo">PRODUCT_LAUNCH </a>
+			<a href="#" data-speed="1000" data-easing="easeOutBack" >MAQUINA_MAESTRO</a>
+            <a href="#" data-speed="1000" data-easing="easeInExpo" >ELYTZ</a>  
+            <a href="#" data-speed="1000" data-easing="easeInExpo">CIRCUITRIX  </a>  
+            <a href="#" data-speed="1000" data-easing="easeInExpo">On the Spot</a>  
+            
+                     </div>
+         
+<div id="mb_content_wrapper" class="mb_content_wrapper">
+			<span class="mb_close"></span>
+		
+			<div class="mb_content">
+				<h2>Paper Presentation</h2>
+				<div class="mb_content_inner">
+					
+<h3><b>Introduction	</b></h3>
+<p>
+Every good thought ought to be realized. This event paves a way for you to project your thoughts in a systematic, creative and sequential way in open.  As creative, young minds that are well-trained to help the society, we call out to you to achieve excellence in verbalizing your thoughts in the form of paper presentation.
+</p>
+<h3><b>Event Rules:</b></h3>
+<ul>
+<li>A maximum of two students per team.</li>
+<li>	Abstract should be sent to paper.livewire13@gmail.com. On or before 10.02.2013.</li>
+<li>	The abstract should be in IEEE format.</li>
+<li>	Judges` decision is final and binding.</li>
+</ul>
+
+<h3><b>Event Format:</b></h3>
+<p>The event involves the participants sending the abstracts to paper.livewire13@gmail.com.The participants whose papers are selected will be informed and are to present the paper at KCT campus. The paper will be judged based on creativity, originality, how it aids the society and applicability. 
+</p>
+<h3><b>Important Dates:</b></h3>
+
+<ul>
+<li>	Last date for abstract submission: 10.02.2013</li>
+<li>	Date of notifying  the participants of selected papers: 14.02.2013</li>
+</ul>
+<p>
+<b>Student Incharge: </b><br />
+ P.Muthuraj - 9688679170<br />
+ J.Siva sankaran - 9597801070 <br />
+</p>
+
+
+				</div>
+			</div>
+			<div class="mb_content">
+				<h2>Project Presentation</h2>
+				<div class="mb_content_inner">
+					<p>From Halley to Dolly, Innovation to discovery. It is a eureka moment for firing your imagination and getting rewarded for your curiosity as project is the means to actualize your creativity. </p>
+<h3><b>EVENT RULES</b></h3>
+<ol>
+<li>-  A maximum of four students per team.</li>
+<li>-	The abstract of the project must be in IEEE format.</li>
+<li>-	Two hard copies of project report must be brought at the time of the presentation.</li>
+</ol>
+<h3><b>EVENT FORMAT</b></h3>
+<p>	The abstract must be submitted online to project.livewire13@gmail.com (or) to the KCT on or before 10.02.2013.The participants will be intimated of their project selection.</p>
+<h3><b>IMPORTANT DATES</b></h3>
+<ol>
+<li>	- Last date for abstract submission: 10.02.2013</li>
+<li>	- Date of notifying  the participants of selected projects: 14.02.2013</li>
+</ol>
+<p><b>``Make your entrance gracious and exit glorious``</b></p>
+<p>
+<b>Student Incharge: </b><br />
+ S.Vignesh Kumar - 9626483623<br />
+ K.R.Goutham - 95001817783 <br />
+</p>
+				</div>
+			</div>
+			<div class="mb_content">
+				<h2>Maquina Maestro</h2>
+				
+	<div class="mb_content_inner">
+<h3><b> Event Description: </b></h3>
+<p> 
+Maquina maestro is a popular event conducted by EEE. The goal of this event is to analyze the skill of the competitors in the field of electrical machines in both theoretical as well as practical aspects.<br />
+<b>Rounds: 2 </b><br />
+<b> Round 1: Objective Test and Reasoning Round</b><br />
+- First is the objective test and reasoning round where the conceptual skills is tested with 45 objective questions and 5 reasoning questions in the duration of 1hr.  <br />
+
+<b> Round 2: Object identification and description round</b><br />
+
+- In the object identification round,the competitors will be made to analyze the machine parts and other electrical devices in total around 20 objects. After seeing the objects, they have to write the description about it. <br /> 
+
+<b>Rules: </b><br />
+- Maximum of two participants per team.  <br />
+- No electronic gadgets (Calculator, mobile phones) are allowed. <br />
+- Participants would be disqualified if they commit any malpractice. <br />
+
+</p>
+
+
+<p>
+<b>Student Incharge: </b><br />
+ Babu.P - 9688505664<br />
+ Raja Varman - 9677707181 <br />
+</p>
+
+			</div>
+            
+           </div> 
+            <div class="mb_content">
+				<h2>ELYTZ</h2>
+				<div class="mb_content_inner">
+	<p>				First round would be a glimpse of the general stuff around us.it would be like quizzing of everything that is happening around us.</p>
+<p>Second round would seem like a technical puzzle.all you have to do is to puzzle out through the different clues to get to the next round of the game.</p>
+<p>Now for the icing on the cake, the final round to declare "the king of the ring" is something totally unexpected!!!</p>
+<p>
+<b>Student Incharge: </b><br />
+ K.Surya - 9943342718<br />
+ K.Karthikeyan - 9629332143<br />
+</p>
+
+				</div>
+			</div>
+			<div class="mb_content">
+				<h2>CIRCUITRIX</h2>
+				<div class="mb_content_inner">
+		<p><b>	Event description:</b><br />
+  It`s a knowledge check event to quench the thirst of circuit branch engineers.<br />
+<b>Round 1:</b><br />
+   Get your knowledge tested in electronics.<br />
+<b>Round 2:</b><br />
+  Be ready to face the real time problems.<br>
+<b> Rules:</b>
+  Maximum of two members per team<br />
+     </p>
+     <p>
+<b>Student Incharge: </b><br />
+ V.Manoj Kumar - 9677450341<br />
+ Siddarth - 9486585224 <br />
+</p>
+
+
+				</div>
+			</div>
+            <div class="mb_content">
+				<h2>On the Spot</h2>
+				<div class="mb_content_inner">
+					<p>
+                    Get ready for some exciting and fun filled events which will be carried out parallel.<br />For Further Details contact <br />
+                    A.Nivethan - 9994355580<br />
+                    S.Balaji - 9677687894 </p>
+				</div>
+			</div>
+		</div>
+
+<!-- The JavaScript -->
+			<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<!-- the mousewheel plugin - optional to provide mousewheel support -->
+		<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+		<!-- the jScrollPane script -->
+		<script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+		<script type="text/javascript" src="js/jquery.transform-0.9.3.min_.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				var $menu			= $('#mb_menu'),
+				$menuItems			= $menu.children('a'),
+				$mbWrapper			= $('#mb_content_wrapper'),
+				$mbClose			= $mbWrapper.children('.mb_close'),
+				$mbContentItems		= $mbWrapper.children('.mb_content'),
+				$mbContentInnerItems= $mbContentItems.children('.mb_content_inner');
+				$mbPattern			= $('#mb_pattern'),
+				$works				= $('#mb_imagelist > li'),
+				$mb_bgimage			= $('#mb_background > img'),
+				
+				Menu		 		= (function(){
+					
+					var init		= function() {
+						preloadImages();
+						initPlugins();
+						initPattern();
+						initEventsHandler();
+					},
+					//preloads the images for the work area (data-bgimg attr)
+					preloadImages	= function() {
+						$works.each(function(i) {
+							$('<img/>').attr('src' , $(this).children('img').data('bgimg'));
+						});
+					},
+					//initialise the jScollPane (scroll plugin)
+					initPlugins		= function() {
+						$mbContentInnerItems.jScrollPane({
+						
+							verticalDragMinHeight: 40,
+							verticalDragMaxHeight: 40
+						});
+					},
+					/*
+						draws 16 boxes on a specific area of the page.
+						we randomly calculate the top, left, and rotation angle for each one of them
+					 */
+					initPattern		= function() {
+						for(var i = 0; i < 24 ; ++i) {
+							//random opacity, top, left and angle
+							var o		= 0.1,
+							t		= Math.floor(Math.random()*196) + 5, // between 5 and 200
+							l		= Math.floor(Math.random()*696) + 5, // between 5 and 700
+							a		= Math.floor(Math.random()*101) - 50; // between -50 and 50
+									
+							$el		= $('<div>').css({
+								opacity			: o,
+								top:200+ t + 'px',
+								left			:200+ l + 'px'
+							});
+								
+							if (!$.browser.msie)
+								$el.transform({'rotate'	: a + 'deg'});
+								
+							$el.appendTo($mbPattern);
+						}
+						$mbPattern.children().draggable(); //just for fun
+					},
+					/*
+						when the User closes a content item, we move the boxes back to the original place,
+						with new random values for top, left and angle though
+					 */
+					disperse 		= function() {
+						$mbPattern.children().each(function(i) {
+							//random opacity, top, left and angle
+							var o			= 0.1,
+							t			= Math.floor(Math.random()*196) + 5, // between 5 and 200
+							l			= Math.floor(Math.random()*696) + 5, // between 5 and 700
+							a			= Math.floor(Math.random()*101) - 50; // between -50 and 50
+							$el			= $(this),
+							param		= {
+								width	: '50px',
+								height	: '50px',
+								opacity	: o,
+								top		: t + 'px',
+								left	: 200+l + 'px'
+							};
+									
+							if (!$.browser.msie)
+								param.rotate	= a + 'deg';
+									
+							$el.animate(param, 1000, 'easeOutExpo');
+						});
+					},
+					initEventsHandler	= function() {
+						/*
+							click a link in the menu
+						 */
+						$menuItems.bind('click', function(e) {
+							var $this	= $(this),
+							pos		= $this.index(),
+							speed	= $this.data('speed'),
+							easing	= $this.data('easing');
+							//if an item is not yet shown
+							if(!$menu.data('open')){
+								//if current animating return
+								if($menu.data('moving')) return false;
+								$menu.data('moving', true);
+								$.when(openItem(pos, speed, easing)).done(function(){
+									$menu.data({
+										open	: true,
+										moving	: false
+									});
+									showContentItem(pos);
+									$mbPattern.children().fadeOut(500);
+								});
+
+							}
+							else
+							{
+						$menu.data('open', false);
+							/*
+								if we would want to show the default image when we close:
+								changeBGImage('images/default.jpg');
+							 */
+							$mbPattern.children().fadeIn(500, function() {
+								$mbContentItems.hide();
+								$mbWrapper.hide();
+							});
+								
+							disperse();
+						
+							if($menu.data('moving')) return false;
+								$menu.data('moving', true);
+								$.when(openItem(pos, speed, easing)).done(function(){
+									$menu.data({
+										open	: true,
+										moving	: false
+									});
+									showContentItem(pos);
+									$mbPattern.children().fadeOut(500);
+								});
+								showContentItem(pos);
+								}
+							return false;
+						});
+							
+						/*
+							click close makes the boxes animate to the top of the page
+						 */
+						$mbClose.bind('click', function(e) {
+							$menu.data('open', false);
+							/*
+								if we would want to show the default image when we close:
+								changeBGImage('images/default.jpg');
+							 */
+							$mbPattern.children().fadeIn(500, function() {
+								$mbContentItems.hide();
+								$mbWrapper.hide();
+							});
+								
+							disperse();
+							return false;
+						});
+							
+						/*
+							click an image from "Works" content item,
+							displays the image on the background
+						 */
+						$works.bind('click', function(e) {
+							var source	= $(this).children('img').data('bgimg');
+							changeBGImage(source);
+							return false;
+						});
+								
+					},
+					/*
+						changes the background image
+					 */
+					changeBGImage		= function(img) {
+						//if its the current one return
+						if($mb_bgimage.attr('src') === img || $mb_bgimage.siblings('img').length > 0)
+							return false;
+									
+						var $itemImage = $('<img src="'+img+'" alt="Background" class="mb_bgimage" style="display:none;"/>');
+						$itemImage.insertBefore($mb_bgimage);
+							
+						$mb_bgimage.fadeOut(1000, function() {
+							$(this).remove();
+							$mb_bgimage = $itemImage;
+						});
+						$itemImage.fadeIn(1000);
+					},
+					/*
+						This shows a content item when there is already one shown:
+					 */
+					showContentItem		= function(pos) {
+						$mbContentItems.hide();
+						$mbWrapper.show();
+						$mbContentItems.eq(pos).show().children('.mb_content_inner').jScrollPane();
+					},
+					/*
+						moves the boxes from the top to the center of the page,
+						and shows the respective content item						
+					 */
+					openItem			= function(pos, speed, easing) {
+						return $.Deferred(
+						function(dfd) {
+							$mbPattern.children().each(function(i) {
+								var $el			= $(this),
+								param		= {
+									width	: '100px',
+									height	: '100px',
+									top		: 154 + 100 * Math.floor(i/6),
+									left	: 400 + 100 * (i%6),
+									opacity	: 1
+								};
+										
+								if (!$.browser.msie)
+									param.rotate	= '0deg';
+										
+								$el.animate(param, speed, easing, dfd.resolve);
+							});
+						}
+					).promise();
+					};
+						
+					return {
+						init : init
+					};
+					
+				})();
+			
+				/*
+					call the init method of Menu
+				 */
+				Menu.init();
+			});
+		</script>
+		</div>
+		<!-- /Events -->  
+
+	<!-- sponsers -->
+		<div id="sponsers" class="panel" style="background-image:url(images/sponsors.jpg)">
+        
+        
+           <link rel="stylesheet" type="text/css" href="css/demofold.css" />
+        <link rel="stylesheet" type="text/css" href="css/style_common.css" />
+        <link rel="stylesheet" type="text/css" href="css/style1fold.css" />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css' />
+		<script type="text/javascript" src="js/modernizr.custom.69142.js"></script> 
+   
+
+            <div id="grid" class="main">
+				<div class="view">
+					<div class="view-back">
+					<span >Visit<br /> our<br />Website</span>
+						<a href="#">collegecampi.in</a>
+					</div>
+					<img src="images/pow.jpg" width="300" height="300"/>
+				</div>
+				<div class="view">
+					<div class="view-back">
+					<span >Visit<br /> our<br />Website</span>
+						<a href="#">&rarr;</a>
+					</div>
+					<img src="images/pow.jpg" />
+				</div>
+				<div class="view">
+					<div class="view-back">
+					<span >Visit<br /> our<br />Website</span>
+						<a href="#">&rarr;</a>
+					</div>
+					<img src="images/pow.jpg" />
+				</div>
+				<div class="view">
+					<div class="view-back">
+						<span >Visit<br /> our<br />Website</span>
+					
+						<a href="#">&rarr;</a>
+					</div>
+					<img src="images/pow.jpg" />
+				</div>
+			</div>
+    
+		<script type="text/javascript">	
+			
+			Modernizr.load({
+				test: Modernizr.csstransforms3d && Modernizr.csstransitions,
+				yep : ['js/jquery.hoverfold.js'],
+				nope: 'css/fallback.css',
+				callback : function( url, result, key ) {
+						
+					if( url === 'js/jquery.hoverfold.js' ) {
+				$( '#grid' ).hoverfold();
+					}
+
+				}
+			});
+				
+		</script>
+	
+  	</div>
+		<!-- /sponsers -->
+
+
+	<!-- gallery -->
+		<div id="gallery" class="panel">
+	
+          <link rel="stylesheet" type="text/css" href="css/stylel2.css" />
+		<!--<link href="css/css.css" rel='stylesheet' type='text/css' />
+		<link href="css/css1.css" rel='stylesheet' type='text/css' />
+		--><link type="text/css" href="css/jquery.jscrollpane.css" rel="stylesheet" media="all" />
+      
+     
+    <div id="mb1_background" class="mb1_background">
+			<img class="mb1_bgimage" src="images/default.jpg" alt="Background"/>
+			
+			<div class="mb1_loading"></div>
+		</div>
+    
+		<div id="mb1_pattern" class="mb1_pattern"></div>
+		  <div id="mb1_menu" class="mb1_menu" >
+    
+		
+			<a href="#" data-speed="1000" data-easing="easeInExpo" >Livewire'12</a>  
+            <a href="#" data-speed="1000" data-easing="easeInExpo">Think Tank </a>  
+           
+            
+            
+                     </div>
+         
+<div id="mb1_content_wrapper" class="mb1_content_wrapper">
+			<span class="mb1_close"></span>
+		
+			<div class="mb1_content">
+				<h2>Livewire'12</h2>
+				<div class="mb1_content_inner">
+					<ul id="mb1_imagelist" class="mb1_imagelist">
+						<li><img src="images/small/1.jpg" alt="image1" data-bgimg="images/image1.jpg"/></li>
+						<li><img src="images/small/2.jpg" alt="image2" data-bgimg="images/image2.jpg"/></li>
+						<li><img src="images/small/3.jpg" alt="image3" data-bgimg="images/image3.jpg"/></li>
+						<li><img src="images/small/4.jpg" alt="image4" data-bgimg="images/image4.jpg"/></li>
+						<li><img src="images/small/5.jpg" alt="image2" data-bgimg="images/image5.jpg"/></li>
+						<li><img src="images/small/6.jpg" alt="image1" data-bgimg="images/image6.jpg"/></li>
+						<li><img src="images/small/7.jpg" alt="image4" data-bgimg="images/image7.jpg"/></li>
+						<li><img src="images/small/8.jpg" alt="image3" data-bgimg="images/image8.jpg"/></li>
+                        <li><img src="images/small/9.jpg" alt="image1" data-bgimg="images/image9.jpg"/></li>					</ul>
+				
+				</div>
+			</div>
+			<div class="mb1_content">
+				<h2>Think Tank Gallery</h2>
+				<div class="mb1_content_inner">
+					This page will be updated soon...
+				</div>
+			</div>
+			
+			
+		</div>
+
+<!-- The JavaScript -->
+	<script type="text/javascript" src="js/jquery.min1.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<!--		 the mousewheel plugin - optional to provide mousewheel support 
+-->		<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+		<!-- the jScrollPane script 
+		--><script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+		<script type="text/javascript" src="js/jquery.transform-0.9.3.min_.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				var $menu			= $('#mb1_menu'),
+				$menuItems			= $menu.children('a'),
+				$mb1Wrapper			= $('#mb1_content_wrapper'),
+				$mb1Close			= $mb1Wrapper.children('.mb1_close'),
+				$mb1ContentItems		= $mb1Wrapper.children('.mb1_content'),
+				$mb1ContentInnerItems= $mb1ContentItems.children('.mb1_content_inner');
+				$mb1Pattern			= $('#mb1_pattern'),
+				$works				= $('#mb1_imagelist > li'),
+				$mb1_bgimage			= $('#mb1_background > img'),
+				
+				Menu		 		= (function(){
+					
+					var init		= function() {
+						preloadImages();
+						initPlugins();
+						initPattern();
+						initEventsHandler();
+					},
+					//preloads the images for the work area (data-bgimg attr)
+					preloadImages	= function() {
+						$works.each(function(i) {
+							$('<img/>').attr('src' , $(this).children('img').data('bgimg'));
+						});
+					},
+					//initialise the jScollPane (scroll plugin)
+					initPlugins		= function() {
+						$mb1ContentInnerItems.jScrollPane({
+							verticalDragMinHeight: 40,
+							verticalDragMaxHeight: 40
+						});
+					},
+					/*
+						draws 16 boxes on a specific area of the page.
+						we randomly calculate the top, left, and rotation angle for each one of them
+					 */
+					initPattern		= function() {
+						for(var i = 0; i < 16 ; ++i) {
+							//random opacity, top, left and angle
+							var o		= 0.1,
+							t		= Math.floor(Math.random()*196) + 5, // between 5 and 200
+							l		= Math.floor(Math.random()*696) + 5, // between 5 and 700
+							a		= Math.floor(Math.random()*101) - 50; // between -50 and 50
+									
+							$el		= $('<div>').css({
+								opacity			: o,
+								top:200+ t + 'px',
+								left			:600+ l + 'px'
+							});
+								
+							if (!$.browser.msie)
+								$el.transform({'rotate'	: a + 'deg'});
+								
+							$el.appendTo($mb1Pattern);
+						}
+						$mb1Pattern.children().draggable(); //just for fun
+					},
+					/*
+						when the User closes a content item, we move the boxes back to the original place,
+						with new random values for top, left and angle though
+					 */
+					disperse 		= function() {
+						$mb1Pattern.children().each(function(i) {
+							//random opacity, top, left and angle
+							var o			= 0.1,
+							t			= Math.floor(Math.random()*196) + 5, // between 5 and 200
+							l			= Math.floor(Math.random()*696) + 5, // between 5 and 700
+							a			= Math.floor(Math.random()*101) - 50; // between -50 and 50
+							$el			= $(this),
+							param		= {
+								width	: '50px',
+								height	: '50px',
+								opacity	: o,
+								top		: t + 'px',
+								left	: 600+l + 'px'
+							};
+									
+							if (!$.browser.msie)
+								param.rotate	= a + 'deg';
+									
+							$el.animate(param, 1000, 'easeOutExpo');
+						});
+					},
+					initEventsHandler	= function() {
+						/*
+							click a link in the menu
+						 */
+						$menuItems.bind('click', function(e) {
+							var $this	= $(this),
+							pos		= $this.index(),
+							speed	= $this.data('speed'),
+							easing	= $this.data('easing');
+							//if an item is not yet shown
+							if(!$menu.data('open')){
+								//if current animating return
+								if($menu.data('moving')) return false;
+								$menu.data('moving', true);
+								$.when(openItem(pos, speed, easing)).done(function(){
+									$menu.data({
+										open	: true,
+										moving	: false
+									});
+									showContentItem(pos);
+									$mb1Pattern.children().fadeOut(500);
+								});
+
+							}
+							else
+								showContentItem(pos);
+							return false;
+						});
+							
+						/*
+							click close makes the boxes animate to the top of the page
+						 */
+						$mb1Close.bind('click', function(e) {
+							$menu.data('open', false);
+							/*
+								if we would want to show the default image when we close:
+								changeBGImage('images/default.jpg');
+							 */
+							$mb1Pattern.children().fadeIn(500, function() {
+								$mb1ContentItems.hide();
+								$mb1Wrapper.hide();
+							});
+								
+							disperse();
+							return false;
+						});
+							
+						/*
+							click an image from "Works" content item,
+							displays the image on the background
+						 */
+						$works.bind('click', function(e) {
+							var source	= $(this).children('img').data('bgimg');
+							changeBGImage(source);
+							return false;
+						});
+								
+					},
+					/*
+						changes the background image
+					 */
+					changeBGImage		= function(img) {
+						//if its the current one return
+						if($mb1_bgimage.attr('src') === img || $mb1_bgimage.siblings('img').length > 0)
+							return false;
+									
+						var $itemImage = $('<img src="'+img+'" alt="Background" class="mb1_bgimage" style="display:none;"/>');
+						$itemImage.insertBefore($mb1_bgimage);
+							
+						$mb1_bgimage.fadeOut(1000, function() {
+							$(this).remove();
+							$mb1_bgimage = $itemImage;
+						});
+						$itemImage.fadeIn(1000);
+					},
+					/*
+						This shows a content item when there is already one shown:
+					 */
+					showContentItem		= function(pos) {
+						$mb1ContentItems.hide();
+						$mb1Wrapper.show();
+						$mb1ContentItems.eq(pos).show().children('.mb1_content_inner').jScrollPane();
+					},
+					/*
+						moves the boxes from the top to the center of the page,
+						and shows the respective content item						
+					 */
+					openItem			= function(pos, speed, easing) {
+						return $.Deferred(
+						function(dfd) {
+							$mb1Pattern.children().each(function(i) {
+								var $el			= $(this),
+								param		= {
+									width	: '100px',
+									height	: '100px',
+									top		: 154 + 100 * Math.floor(i/4),
+									left	: 800 + 100 * (i%4),
+									opacity	: 1
+								};
+										
+								if (!$.browser.msie)
+									param.rotate	= '0deg';
+										
+								$el.animate(param, speed, easing, dfd.resolve);
+							});
+						}
+					).promise();
+					};
+						
+					return {
+						init : init
+					};
+					
+				})();
+			
+				/*
+					call the init method of Menu
+				 */
+				Menu.init();
+			});
+		</script>
+      
+ 
+		</div>
+		<!-- /gallery -->
+     
+	<!-- About -->
+		<div id="about" class="panel"  style="background-image:url(images/about.jpg)">
+      
+			<div class="content">
+				<h2>About KCT</h2>
+				                <p>Kumaraguru College of Technology (KCT), Coimbatore is a self – financing Engineering college started in 1984 under the auspices of Ramanandha Adigalar Foundation, a charitable educational trust of Sakthi group. It is located 2kms off the Coimbatore- Mysore National Highway (NH-209) on a serene and well developed campus that spreads over 150 acres.</p>
+<p>Under the able guidance and patronage of Arutselvar Dr. N. Mahalingam, Chairman, Sakthi group and the able administration of Dr. B. K. Krishnaraj Vanavarayar, Co- Chairman, the college has developed excellent facilities and resources and stands first in Autonomous ranking. Currently the college offers 12 UG and 14 PG programmes. The college has the approval of the All India Council for Technical Education (AICTE) and all eligible programs have been accredited by National Board of Accreditation (NBA). ISO 9001:2008 certificate adds another feather to the cap of the institution.</p>
+<p>The college has 15 academic departments, 8 research centres, over 279 well qualified teaching faculty, 119 technical staff and 120 office staff. The standard of the education and training imparted by the college is highlighted by the interest shown by the leading companies for on- campus recruitment. Our alumni have done us proud by proving their worth in their chosen field of work.</p>
+			</div>
+		</div>
+		<!-- /About -->
+	
+		
+		<!-- Contact -->
+		<div id="contact" class="panel" style="background-color: #87cfe6">
+			<div class="content">
+				<h2>Contact</h2>
+			<p>Student Members:</p><br /><p>Secretary: P.Vinodh Kumar - 9600367733</p><br />
+           <p>Treasurer: Sameer Hussian - 7708588441</p>
+				<form id="form">
+					<p><label>Your Name</label><input type="text" /></p>
+					<p><label>Your Email</label><input type="text" /></p>
+					<p><label>Your Message</label><textarea></textarea></p>
+				</form>
+			</div>
+		</div>
+		<!-- /Contact -->
+
+	<!-- Header with Navigation -->
+		<div id="header">
+			<h1><center><img src="images/logo.gif" width="120" height="100" /></center></h1>
+			<ul id="navigation">
+				<li><a id="link-home" href="#home">Home</a></li>
+				<li><a id="link-events" href="#events">Events</a></li>
+                   <li><a id="link-sponsers" href="#sponsers">Sponsors</a></li>
+                   <li><a id="link-register" href="#register">Registration</a></li>
+               <li><a id="link-gallery" href="#gallery">Gallery</a></li>
+				<li><a id="link-about" href="#about">About Us</a></li>
+				<li><a id="link-contact" href="#contact">Contact</a></li>
+              
+             
+			</ul>
+			
+		</div>
+       
+	
+		
+	 <div id="footer" >
+		
+ <div id="abc" style="float:left;text-align:left"> Copyrights @ 2013 <a href="http://www.kct.ac.in" target="_blank">KCT</a>. All rights reserved.</div> <div id="abc" style="text-align:right">Powered by<a href="http://www.yazhinnovations.com " target="_blank"> Yazh Innovations</a>&nbsp;&nbsp;<br></div><br />
+
+
+	</body>
+</html>

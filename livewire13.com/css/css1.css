@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Astloch';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Astloch'), url(http://themes.googleusercontent.com/static/fonts/astloch/v3/Lip-aAC4yyZnegrgsi4iHA.woff) format('woff');
+}
+@font-face {
+  font-family: 'Astloch';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Astloch Bold'), local('Astloch-Bold'), url(http://themes.googleusercontent.com/static/fonts/astloch/v3/IjDNVaR3WOrQMh9cLq1mUhsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
+}
